@@ -10,6 +10,14 @@ header {
 }
 ul {
     list-style-type: none;
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: -1px;
+}
+li {
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: normal;
 }
 .wrapper {
     width: 968px;
@@ -23,12 +31,16 @@ ul {
     height: 40px;
     background-image: linear-gradient( 0deg, rgb(68, 67, 67) 0%, rgb(94, 94, 94) 100%);
     margin-bottom: 40px;
+    box-sizing: border-box;
 }
 .top-menu li {
     display: inline-block;
     text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.5);
     height: 40px;
-    padding: 0 24px;
+    min-width: 100px;
+    text-align: center;
+    border-left: 1px solid rgba(0, 0,0,0);
+    border-right: 1px solid rgba(0, 0,0,0);
 }
 .top-menu a {
     font: normal 12px/36px Tahoma, Arial, sans-serif;
@@ -39,6 +51,11 @@ ul {
     background-image: linear-gradient( 0deg, rgb(46, 46, 46) 0%, rgb(74, 74, 74) 100%);
     border-left: 1px solid #838383;
     border-right: 1px solid #838383;
+}
+.top-menu li:hover {
+    background-image: linear-gradient( 0deg, rgb(46, 46, 46) 0%, rgb(74, 74, 74) 100%);
+    //border-left: 1px solid #838383;
+    //border-right: 1px solid #838383;
 }
 .side-menu {
     float: left;
@@ -66,6 +83,12 @@ ul {
 }
 .side-menu .active a {
     margin-left: 12px;
+    color: #2c2c2c;
+}
+.side-menu li:hover {
+    background-color: #f9f9f9;
+}
+.side-menu li:hover a {
     color: #2c2c2c;
 }
 main {
@@ -110,6 +133,9 @@ footer a {
 footer .active {
     text-decoration: underline;
     cursor: default;
+}
+footer li:hover a {
+   text-decoration: underline; 
 }
 footer p {
     float: right;
