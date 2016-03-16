@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+    outline: none;
 	border: none;
 }
 
@@ -98,6 +99,7 @@ nav,
 
 h1,
 .wrapper {
+    position: relative;
 	margin: 0 auto;
 	width: 560px;
 	background-color: rgba(0, 0, 0, 0.5);
@@ -110,6 +112,23 @@ h1 {
 	line-height: 62px;
 }
 
+.fb-login {
+    height: 34px;
+    border-top: 1px solid #7889b7;
+}
+
+.divider {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 276px;
+    color: #999;
+}
+
+span {
+    padding: 0 15px;
+}
+
 form {
 	display: inline-block;
 	width: 276px;
@@ -118,10 +137,10 @@ form {
 
 form p {
 	display: inline-block;
-	line-height: 16px;
 	width: 100%;
-	text-align: left;
 	color: #ccc;
+	text-align: left;
+	line-height: 16px;
 }
 
 form p input {
@@ -132,56 +151,79 @@ form p input {
 
 input {
 	display: block;
+    box-sizing: border-box;
 	margin-bottom: 19px;
+    padding: 0 0 0 12px;
 	width: 100%;
 	height: 35px;
-	border-bottom: 1px solid #4b4b4b;
+	border-bottom: 1px solid #484848;
 	background-color: #100f0f;
 	box-shadow: inset 0px 2px 5px 0px rgba(29, 26, 22, 0.2);
+}
+
+input::-webkit-input-placeholder{
+    color: #ccc;
+}
+
+input:hover::-webkit-input-placeholder,
+input:focus::-webkit-input-placeholder{
+    color: #fff;
+}
+
+form > input:hover,
+form > input:focus {
+	padding: 0 0 0 12px;
+	border-bottom: 1px solid #689bcc;
+	background-color: #1b5288;
+    box-shadow: 0px 0px 12px 3px rgba(106, 176, 244, 0.75),inset 0px 2px 5px 0px rgba(29, 26, 22, 0.2);
+    color: #fff;
 }
 
 input[type=checkbox] {
 	display: inline-block;
 	width: 15px;
 	height: 15px;
-	
 }
+
+input[type=checkbox],
+label {cursor: pointer;}
 
 button {
 	position: relative;
-	color: #fff;
 	padding: 0 14px;
-	line-height: 36px;
-	background: linear-gradient(0deg, #2e7ac4 0%, #50aedb 100%);	
 	border-radius: 4px;
+	background: linear-gradient(0deg, #2e7ac4 0%, #50aedb 100%);	
+	color: #fff;
+	line-height: 36px;
+    cursor: pointer;
 }
 
 button:before {
-	content: "Create my Account";
 	position: absolute;
 	top: -1px;
 	left: -1px;
-	width: 102%;
+	width: 101.5%;
 	height: 105%;
+	border-radius: 5px;
 	background: linear-gradient(0deg, #4299d2 0%, #1467b2 100%);
-	border-radius: 4px;
+	content: "Create my Account";
 }
 
 button:after {
-	content: "Create my Account";
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(0deg, #2e7ac4 0%, #50aedb 100%);
 	border-radius: 4px;
+	background: linear-gradient(0deg, #2e7ac4 0%, #50aedb 100%);
+	content: "Create my Account";
 }
 
 .terms {
+	margin: 20px;
 	width: 350px;
 	color: #ccc;
 	font-size: 11px;
 	line-height: 16px;
-	margin: 20px;
 }
