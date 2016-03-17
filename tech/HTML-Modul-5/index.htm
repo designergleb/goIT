@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>HTML Module 5 Homework</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css">
     </head>
     
@@ -30,32 +31,34 @@
             </div>
         </div>
         
-        <h1>Cadastre-se</h1>
         <div class="wrapper">
-            <div class="fb-login">
-                Log In with Facebook
+            <h1>Cadastre-se</h1>
+            <div class="form">
+                <a href="#" class="fb-login">
+                    <span>
+                        <strong>Log In</strong> with <strong>Facebook</strong>
+                    </span>
+                </a>
+                <div class="divider">
+                    <span>OU</span>
+                </div>
+                <form action="#" method="post">
+                    <input type="text" name="fname" placeholder="First Name">
+                    <input type="text" name="lname" placeholder="Last Name">
+                    <input type="email" name="email" placeholder="Email Address">
+                    <input type="password" name="pass-1" placeholder="Choose Password">
+                    <input type="password" name="pass-2" placeholder="Password Confirm">
+                    <p>
+                        <input id="send" type="checkbox" name="send" checked>
+                        <label for="send">Send me Youbike updates and tips</label>
+                    </p>
+                    <button type="submit" value="Submit">Create my Account</button>
+                </form>
+                <p class="terms">By clicking the button above, you agree to the Terms of Service
+    Xiew our Privacy Policy.</p>
             </div>
-            <div class="divider">
-                <div class="line"></div>
-                <span>OU</span>
-                <div class="line"></div>
-            </div>
-            <form action="#" method="post">
-                <input type="text" name="fname" placeholder="First Name">
-                <input type="text" name="lname" placeholder="Last Name">
-                <input type="email" name="email" placeholder="Email Address">
-                <input type="password" name="pass-1" placeholder="Choose Password">
-                <input type="password" name="pass-2" placeholder="Password Confirm">
-				<p>
-					<input id="send" type="checkbox" name="send" checked>
-					<label for="send">Send me Youbike updates and tips</label>
-				</p>
-                <button type="submit" value="Submit">Create my Account</button>
-            </form>
-            <p class="terms">By clicking the button above, you agree to the Terms of Service
-Xiew our Privacy Policy.</p>
-        </div>
+        </div> 
         
-    </body>
+    </body>  
     
 </html>
