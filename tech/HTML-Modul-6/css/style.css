@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 910px;
+    margin: 0 auto;
+}
+
+ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 0;
+	line-height: 0;
+}
+
+li {
+	display: inline-block;
+	font-size: 14px;
+	line-height: normal;
+}
+
+.top div {
+    display: inline-block;
+}
+section { position: relative; }
+address {
+    display: inline-block;
+    font: normal 18px/23px 'Arial', sans-serif;
+    color: #5e696d;
+    background: url(../images/phone-icon.png) no-repeat;
+    padding: 0 0 0 25px;
+    margin: 0 0 0 5px;
+}
+
+.login {
+    display: inline-block;
+    height: 26px;
+    background-color: #ccc;
+    padding: 0 5px;
+}
+
+.login form {
+    display: inline-block;
+    padding: 0 0 0 15px;
+    background: url(../images/login-icon.png) no-repeat;
+}
+
+.login input {
+    width: 115px;
+    height: 18px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+}
+
+.login a {
+    display: inline-block;
+    font: normal 11px/18px 'Arial', sans-serif;
+    color: #fff;
+}
+
+.fast-access {
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+
+
+
