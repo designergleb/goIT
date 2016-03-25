@@ -49,6 +49,173 @@
                 <span>0,00 грн.</span>
             </div>
         </section>
+        
+        <div class="forms">
+            <div class="forms-first">
+                <h2>Поиск по автомобилю</h2>
+                <form>
+                    <h3>Диски:</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <span>Марка&nbsp;<span class="grey">авто:</span></span>
+                            </td>
+                            <td>
+                                <select>
+                                    <option selected>все макри</option>
+                                    <option>Марка 1</option>
+                                    <option>Марка 2</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Модель&nbsp;<span class="grey">автомобиля:</span></span>
+                            </td>
+                            <td>
+                                <select>
+                                    <option selected>все модели</option>
+                                    <option>Модель 1</option>
+                                    <option>Модель 2</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Год выпуска&nbsp;<span class="grey">автомобиля:</span></span>
+                            </td>
+                            <td>
+                                <select>
+                                    <option selected>любой</option>
+                                    <option>2016</option>
+                                    <option>2015</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Комплектация:</span>
+                            </td>
+                            <td>
+                                <select>
+                                    <option selected>любая</option>
+                                    <option>Полная</option>
+                                    <option>Средняя</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <form>
+                    <h3>Шины:</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <span>Марка&nbsp;<span class="grey">авто:</span></span>
+                            </td>
+                            <td>
+                                <select>
+                                    <option selected>все макри</option>
+                                    <option>Марка 1</option>
+                                    <option>Марка 2</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Модель&nbsp;<span class="grey">автомобиля:</span></span>
+                            </td>
+                            <td>
+                                <select>
+                                    <option selected>все модели</option>
+                                    <option>Модель 1</option>
+                                    <option>Модель 2</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Год выпуска&nbsp;<span class="grey">автомобиля:</span></span>
+                            </td>
+                            <td>
+                                <select>
+                                    <option selected>любой</option>
+                                    <option>2016</option>
+                                    <option>2015</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Комплектация:</span>
+                            </td>
+                            <td>
+                                <select>
+                                    <option selected>любая</option>
+                                    <option>Полная</option>
+                                    <option>Средняя</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <a href="#">поиск...</a>
+            </div>
+            <div class="forms-second">
+                <h2>Поиск шин</h2>
+                    <form>
+                        <table>
+                            <tr>
+                                <td>
+                                    <span>Размер:</span>
+                                </td>
+                                <td>
+                                    <select>
+                                        <option selected>все размеры</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                </td>
+                                <td>/</td>
+                                <td>
+                                    <select>
+                                        <option selected> </option>
+                                        <option>Марка 1</option>
+                                        <option>Марка 2</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>R</span>
+                                </td>
+                                <td>
+                                    <select>
+                                        <option selected>любой</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>Сезон:</span>
+                                </td>
+                                <td>
+                                    <input type="checkbox">
+                                    <label>лето</label>
+                                    <input type="checkbox">
+                                    <label>зима</label>
+                                    <input type="checkbox"> 
+                                    <label>все сезоны</label>
+                                </td>
+                            </tr>
+                        </table>
+                        <a href="#">поиск...</a>
+                    </form>
+                </div>
+            <div class="forms-third"></div>            
+        </div>
 
         <section class="content">
             <section class="catalog">
@@ -77,14 +244,16 @@
                     <li><a href="#">Наименование 4</a></li>
                 </ul>
             </section>
-            <main role="main">             
+            <main>             
 				<a href="#" class="item">
 					<h3>Goodyear</h3>
 					<h4>Ultra Grip Extreme</h4>
 					<div class="image">
 						<img src="images/wheel.png" alt="wheel">
 					</div>
-					<span class="price">90.00 грн.</span>				
+					<span class="price">90.00 
+                        <span class="price-currency">грн.</span>
+                    </span>				
 				</a>
 				<a href="#" class="item">
 					<h3>Nokian</h3>
@@ -92,7 +261,9 @@
 					<div class="image">
 						<img src="images/wheel.png" alt="wheel">
 					</div>
-					<span class="price">115.00 грн.</span>
+					<span class="price">115.00 
+                        <span class="price-currency">грн.</span>
+                    </span>
 				</a>				
                 <a href="#" class="item">
                     <h3>Hankook</h3>
@@ -100,7 +271,9 @@
                     <div class="image">
                         <img src="images/wheel.png" alt="wheel">
                     </div>
-                    <span class="price">393.00 грн.</span>
+                    <span class="price">393.00 
+                        <span class="price-currency">грн.</span>
+                    </span>
                 </a>
                 <a href="#" class="item">
                     <h3>Goodyear</h3>
@@ -108,7 +281,9 @@
                     <div class="image">
                         <img src="images/wheel.png" alt="wheel">
                     </div>
-                    <span class="price">90.00 грн.</span>
+                    <span class="price">90.00 
+                        <span class="price-currency">грн.</span>
+                    </span>
                 </a>
                 <a href="#" class="item">
                     <h3>Nokian</h3>
@@ -116,7 +291,9 @@
                     <div class="image">
                         <img src="images/wheel.png" alt="wheel">
                     </div>
-                    <span class="price">115.00 грн.</span>
+                    <span class="price">115.00 
+                        <span class="price-currency">грн.</span>
+                    </span>
                 </a>
                 <a href="#" class="item">
                     <h3>Hankook</h3>
@@ -124,7 +301,9 @@
                     <div class="image">
                         <img src="images/wheel.png" alt="wheel">
                     </div>
-                    <span class="price">393.00 грн.</span>
+                    <span class="price">393.00 
+                        <span class="price-currency">грн.</span>
+                    </span>
                 </a>
                 <a href="#" class="item">
                     <h3>Goodyear</h3>
@@ -132,7 +311,9 @@
                     <div class="image">
                         <img src="images/wheel.png" alt="wheel">
                     </div>
-                    <span class="price">90.00 грн.</span>
+                    <span class="price">90.00 
+                        <span class="price-currency">грн.</span>
+                    </span>
                 </a>
                 <a href="#" class="item">
                     <h3>Nokian</h3>
@@ -140,7 +321,9 @@
                     <div class="image">
                         <img src="images/wheel.png" alt="wheel">
                     </div>
-                    <span class="price">115.00 грн.</span>
+                    <span class="price">115.00 
+                        <span class="price-currency">грн.</span>
+                    </span>
                 </a>
                 <a href="#" class="item">
                     <h3>Hankook</h3>
@@ -148,7 +331,9 @@
                     <div class="image">
                         <img src="images/wheel.png" alt="wheel">
                     </div>
-                    <span class="price">393.00 грн.</span>
+                    <span class="price">393.00 
+                        <span class="price-currency">грн.</span>
+                    </span>
                 </a>
             </main>
             <section class="filter">
@@ -207,38 +392,38 @@
                 </li>
                 <li>
                     <a href="#">
-                        <img src="images/continental-bw.png">
-                        <img class="hover" src="images/continental.png">    
+                        <img src="images/continental-bw.png" alt="continental">
+                        <img class="hover" src="images/continental.png" alt="continental">    
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="images/cooper-bw.png">
-                        <img class="hover" src="images/cooper.png">    
+                        <img src="images/cooper-bw.png" alt="cooper">
+                        <img class="hover" src="images/cooper.png" alt="cooper">    
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="images/avon-bw.png">
-                        <img class="hover" src="images/avon.png">    
+                        <img src="images/avon-bw.png" alt="avon">
+                        <img class="hover" src="images/avon.png" alt="avon">    
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="images/tire-factory-bw.png">
-                        <img class="hover" src="images/tire-factory.png">    
+                        <img src="images/tire-factory-bw.png" alt="tire factory">
+                        <img class="hover" src="images/tire-factory.png" alt="tire factory">    
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="images/pirelli-bw.png">
-                        <img class="hover" src="images/pirelli.png">    
+                        <img src="images/pirelli-bw.png" alt="pirelli">
+                        <img class="hover" src="images/pirelli.png" alt="pirelli">  
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="images/dunlop-bw.png">
-                        <img class="hover" src="images/dunlop.png">  
+                        <img src="images/dunlop-bw.png" alt="dunlop">
+                        <img class="hover" src="images/dunlop.png" alt="dunlop">  
                     </a>
                 </li>
             </ul>	
