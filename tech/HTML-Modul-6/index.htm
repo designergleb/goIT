@@ -171,7 +171,7 @@
                                 </td>
                                 <td>
                                     <select>
-                                        <option selected>все размеры</option>
+                                        <option selected>любой</option>
                                         <option>1</option>
                                         <option>2</option>
                                     </select>
@@ -179,7 +179,7 @@
                                 <td>/</td>
                                 <td>
                                     <select>
-                                        <option selected> </option>
+                                        <option selected>любой</option>
                                         <option>Марка 1</option>
                                         <option>Марка 2</option>
                                     </select>
@@ -188,6 +188,47 @@
                             <tr>
                                 <td>
                                     <span>R</span>
+                                </td>
+                                <td colspan="3">
+                                    <select>
+                                        <option selected>любой</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr class="season">
+                                <td rowspan="3">
+                                    <span>Сезон:</span>
+                                </td>
+                                <td colspan="3">
+                                    <input type="checkbox" id="summer">
+                                    <label for="summer">лето</label>
+                                </td>
+                            </tr>
+							<tr class="season">
+								<td colspan="3">
+									<input type="checkbox" id="winter">
+                                	<label for="winter">зима</label>
+								</td>
+							</tr>
+							<tr class="season">
+								<td colspan="3">
+                                	<input type="checkbox" id="all"> 
+                                	<label for="all">все</label>
+								</td>
+							</tr>
+                        </table>
+                        <a href="#">поиск...</a>
+                    </form>
+                </div>
+            <div class="forms-third">
+				<h2>Поиск дисков</h2>
+                    <form>
+                        <table>
+                            <tr>
+                                <td>
+                                    <span>Диаметр&nbsp;<span class="grey">диска</span></span>
                                 </td>
                                 <td>
                                     <select>
@@ -199,22 +240,62 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <span>Сезон:</span>
+                                    <span>Количество<span class="grey">крепежных дисков</span></span>
                                 </td>
                                 <td>
-                                    <input type="checkbox">
-                                    <label>лето</label>
-                                    <input type="checkbox">
-                                    <label>зима</label>
-                                    <input type="checkbox"> 
-                                    <label>все сезоны</label>
+                                    <select>
+                                        <option selected>любое</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>Диаметр<span class="grey">расположения крепёжных отверстий:</span></span>
+                                </td>
+                                <td>
+                                    <select>
+                                        <option selected>любой</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
                                 </td>
                             </tr>
                         </table>
+						<table>
+						<tr>
+							<td>
+								<span>ДЦО<span class="grey">(диаметр центрального отверстия):</span></span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<select>
+                                	<option selected>любой</option>
+                                	<option>1</option>
+                                	<option>2</option>
+                                </select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span>ET<span class="grey">(вылет диска):</span></span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<select>
+                                	<option selected>любой</option>
+                                	<option>1</option>
+                                	<option>2</option>
+                                </select>
+							</td>
+						</tr>
+						</table>
                         <a href="#">поиск...</a>
                     </form>
-                </div>
-            <div class="forms-third"></div>            
+			</div>            
         </div>
 
         <section class="content">
