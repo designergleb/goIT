@@ -11,7 +11,7 @@ function count() {
   	var num = arr[i].toString();
   	result = result * Number(num);
   }
-  alert("Результать возведения " + a + ' в/во ' + b + ' степень равен ' + result);
+  console.log('Результат возведения ' + a + ' в степень ' + b + ' равен ' + result);
 }
 
 count();
