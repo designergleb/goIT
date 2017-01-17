@@ -1,20 +1,27 @@
-var a;
-var b = 2;
-var arr = new Array;
+var data = {}; //array with user names
+var b = 5; //number of names
 
- for (var i = 1; i < b; i++) {
-   arr[i] = prompt('Для заполнения базы данных введи имя одного из пользователей');
- } 
-
-function count() {
-  a = prompt('Введите имя пользователя');
-  for (var i = 1; i < b; i++) {
-  	if (a = arr[i]) {
-  		alert( a + ' вы успешно вошли' );
-  	} else {
-  		alert( 'Извините, такого имени в базе данных нет' );
-  	}
-  }
+function login() {
+	a = prompt('Введите имя пользователя', 'User name');
+	check();
 }
 
-count();
+function check() {
+	for (key in data) {
+		if (data[key] == a){
+			alert( a + ' вы успешно вошли' );
+			return;
+		}
+	}
+	alert( 'Извините, такого имени в базе данных нет' );
+	login();
+}
+
+function database() {
+	for (i = 0; i < b; i++) {
+		data[i] = prompt('Для заполнения базы данных введи имя одного из пользователей', 'User name');
+	} 
+	login();
+}
+
+database();
