@@ -46,6 +46,5 @@ var quiz = {
 	}
 };
 
-window.onload = function() {
-    quiz.structure();
-}
+quiz.structure();
+
