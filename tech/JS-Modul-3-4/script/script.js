@@ -1,6 +1,6 @@
 function _create(name) {
-			return document.createElement(name);
-		}
+	return document.createElement(name);
+}
 
 var quiz = {
 	structure: function() {
