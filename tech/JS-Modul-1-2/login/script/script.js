@@ -1,4 +1,4 @@
-var data = {}; //object with user names
+var data = new Array(); //object with user names
 var b = 5; //number of names
 
 function login() {
@@ -7,9 +7,9 @@ function login() {
 }
 
 function check() {
-	for (key in data) {
-		if (data[key] == a){
-			alert( a + ' вы успешно вошли' );
+	for (i = 0; i < data.length; i++) {
+		if (data[i] == a){
+			alert(a + ' вы успешно вошли' );
 			return;
 		}
 	}
@@ -20,6 +20,9 @@ function check() {
 function database() {
 	for (i = 0; i < b; i++) {
 		data[i] = prompt('Для заполнения базы данных введи имя одного из пользователей', 'User name');
+		if (event.keyCode == 27) {
+			return;
+		}
 	} 
 	login();
 }
